@@ -4,27 +4,45 @@
 
 ## What I Built
 
-_Write a Bash script that collects system info: CPU, RAM, disk, top processes, open ports, logged-in users, and uptime. Output a formatted report to a file._
+A Bash script that collects system information including CPU, memory, disk usage, top processes, listening ports, logged-in users, and uptime.  
+The script generates a structured, timestamped report and writes it to `/var/log/sysreport.txt`.
 
 ## How to Run
 
 ```bash
-# Build/Run instructions here
+# Make script executable
+chmod +x system-recon.sh
+
+# Run the script (requires sudo to write to /var/log)
+sudo ./system-recon.sh
+
+# View latest report
+sudo tail -n 50 /var/log/sysreport.txt
 ```
 
 ## Tasks
 
-- [ ] Collect CPU/RAM/Disk stats using /proc and df/free\n- [ ] List top 10 CPU-consuming processes\n- [ ] Show listening ports with ss or netstat\n- [ ] Write timestamped report to /var/log/sysreport.txt\n- [ ] Schedule it via cron every 6 hours
+- [x] Collect CPU/RAM/Disk stats using `/proc` and `df`/`free`
+- [x] List top 10 CPU-consuming processes
+- [x] Show listening ports with `ss` or `netstat`
+- [x] Write timestamped report to `/var/log/sysreport.txt`
+- [x] Schedule it via cron every 6 hours
 
 ## What I Learned
 
-- [Key learning 1]
-- [Key learning 2]
+- How to read system metrics from `/proc` (CPU, memory)
+- Using `df` and `free` to monitor disk and RAM usage
+- Process inspection and sorting using `ps`
+- Network inspection using `ss`
+- Parsing and formatting CLI output using `awk` and `grep`
+- Handling Linux permissions when writing to `/var/log`
+- Automating scripts using `cron`
+- Importance of filtering signal vs noise in system monitoring
 
 ## Tools Used
 
-`bash` · `cron` · `ss` · `awk` · `sed`
+`bash` · `cron` · `ss` · `awk` · `sed` · `df` · `free` · `/proc`
 
 ## Resume Bullet
 
-> _Built automated system health reporting tool using Bash; scheduled via cron for proactive monitoring_
+Built a Bash-based system diagnostics and monitoring tool that collects CPU, memory, disk, process, and network metrics from Linux system interfaces; automated reporting via cron for proactive monitoring.
