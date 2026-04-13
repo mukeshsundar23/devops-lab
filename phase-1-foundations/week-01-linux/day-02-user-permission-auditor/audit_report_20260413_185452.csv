@@ -1,0 +1,4 @@
+username,uid,gid,shell,home_dir,home_exists,home_perms,home_perm_ok,groups,has_sudo,sudo_nopasswd,has_ssh_keys,ssh_dir_perms,ssh_key_perms,ssh_fingerprints,anomaly_flags,risk_level
+"root",0,0,"/bin/bash","/root",yes,700,yes,"none",no,no,no,N/A,N/A,"none","none",
+"nobody",65534,65534,"/usr/sbin/nologin","/nonexistent",no,N/A,N/A,"none",no,no,no,N/A,N/A,"none","none",
+"mukesh",1000,1000,"/bin/bash","/home/mukesh",yes,700,yes,"adm,cdrom,sudo,dip,plugdev,lxd,microk8s,docker",yes,no,yes,700,600,"SHA256:nvjztvcOSUWS5ZZWmPInKwpV1PU/4Xq2d8XNlFtF1Wk (ED25519)","none",
