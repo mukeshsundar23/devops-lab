@@ -1,158 +1,22 @@
-# devops-lab
+# DevOps Mastery: Portfolio & Lab
 
-My hands-on DevOps engineering portfolio — 60 projects across 20 weeks, covering everything from Linux fundamentals to production GitOps platforms.
+Welcome to my DevOps journey! This repository serves as a comprehensive monorepo documenting my progress across 60 daily projects as I master DevOps engineering.
 
-Built while working full-time as a DevOps Engineer. Every project is something I built, broke, debugged, and documented.
+## 🚀 Portfolio Highlights
+*(Top 5 projects will be linked here as they are completed)*
 
-## Highlighted Projects
+---
 
-> These are my top builds. Each one is production-grade and interview-ready.
+## 📂 Repository Structure & Roadmap
 
-| Project | What I Built | Tools |
-|---------|-------------|-------|
-| [Full GitOps Platform](phase-8-capstone/week-19/day-58-gitops-platform/) | End-to-end: code push → CI → Docker → ArgoCD → Prometheus → Slack | GitLab CI, ArgoCD, Helm, Prometheus, k3s |
-| [HPA + KEDA Autoscaling](phase-3-orchestration/week-07/) | Horizontal Pod Autoscaler + event-driven scaling on Redis queue length | Kubernetes, KEDA, k6, Redis |
-| [Terraform Multi-Env IaC](phase-4-iac/week-10/day-38-terraform-workspaces/) | Dev/staging/prod from one codebase using workspaces | Terraform, Azure, GitLab CI |
-| [Prometheus + Grafana Stack](phase-6-observability/week-15/day-51-prometheus-grafana/) | Full observability with custom FastAPI metrics and golden-signal dashboards | Prometheus, Grafana, cAdvisor |
-| [Security-Gated CI Pipeline](phase-5-cicd/week-13/day-47-pipeline-security/) | SAST + SCA + image scanning with auto-fail on critical CVEs | Bandit, Safety, Trivy, GitLab CI |
+### [Foundations](./phase-1-foundations)\n\n**Week 1**\n- [Day 1: System Recon Script](./phase-1-foundations/week-01-linux/day-01-system-recon-script) — *Build a sysadmin's first-responder toolkit*\n- [Day 2: User & Permission Auditor](./phase-1-foundations/week-01-linux/day-02-user-permission-auditor) — *Simulate a security audit on a Linux system*\n- [Day 3: Process & Service Manager](./phase-1-foundations/week-01-linux/day-03-process-service-manager) — *Understand systemd inside out*\n- [Day 4: Filesystem & Storage Deep Dive](./phase-1-foundations/week-01-linux/day-04-filesystem-storage-deep-dive) — *LVM, mounts, quotas — the real stuff*\n- [Day 5: Hardening Checklist Automation](./phase-1-foundations/week-01-linux/day-05-hardening-checklist-automation) — *Automate CIS benchmark checks*\n\n**Week 2**\n- [Day 6: Network Fundamentals Lab](./phase-1-foundations/week-02-networking/day-06-network-fundamentals-lab) — *OSI, TCP/IP, DNS — the language of DevOps*\n- [Day 7: Network Discovery Tool](./phase-1-foundations/week-02-networking/day-07-network-discovery-tool) — *Map your local network like a pro*\n- [Day 8: Firewall & iptables Mastery](./phase-1-foundations/week-02-networking/day-08-firewall-iptables-mastery) — *Control every packet entering your server*\n- [Day 9: Reverse Proxy & Load Balancer](./phase-1-foundations/week-02-networking/day-09-reverse-proxy-load-balancer) — *Route traffic like a production engineer*\n- [Day 10: SSH Tunnels & VPN Basics](./phase-1-foundations/week-02-networking/day-10-ssh-tunnels-vpn-basics) — *Secure remote access patterns*\n\n**Week 3**\n- [Day 11: Log Parser & Alerter](./phase-1-foundations/week-03-bash-git-python/day-11-log-parser-alerter) — *Turn noisy logs into actionable alerts*\n- [Day 12: Automated Backup System](./phase-1-foundations/week-03-bash-git-python/day-12-automated-backup-system) — *Production-grade backup with retention policies*\n- [Day 13: Git Workflow Mastery](./phase-1-foundations/week-03-bash-git-python/day-13-git-workflow-mastery) — *Branching, rebasing, conflict resolution*\n- [Day 14: GitLab/GitHub Administration](./phase-1-foundations/week-03-bash-git-python/day-14-gitlab-github-administration) — *Branch protection, code review, and webhooks*\n- [Day 15: Python DevOps Toolkit](./phase-1-foundations/week-03-bash-git-python/day-15-python-devops-toolkit) — *Automate everything with Python*\n- [Day 16: Infrastructure API Client](./phase-1-foundations/week-03-bash-git-python/day-16-infrastructure-api-client) — *Talk to cloud APIs programmatically*\n\n### [Containerization](./phase-2-containerization)\n\n**Week 4**\n- [Day 17: Docker Fundamentals Sprint](./phase-2-containerization/week-04-docker-fundamentals/day-17-docker-fundamentals-sprint) — *Images, containers, volumes, networks*\n- [Day 18: Multi-Stage Docker Build](./phase-2-containerization/week-04-docker-fundamentals/day-18-multi-stage-docker-build) — *Ship lean, production-optimized images*\n- [Day 19: Docker Compose Full Stack](./phase-2-containerization/week-04-docker-fundamentals/day-19-docker-compose-full-stack) — *Spin up a complete app stack locally*\n- [Day 20: Private Registry & Image Scanning](./phase-2-containerization/week-04-docker-fundamentals/day-20-private-registry-image-scanning) — *Run your own registry, scan for CVEs*\n- [Day 21: Docker Network Deep Dive](./phase-2-containerization/week-04-docker-fundamentals/day-21-docker-network-deep-dive) — *Master bridge, host, overlay, and macvlan*\n\n**Week 5**\n- [Day 22: Docker API Controller](./phase-2-containerization/week-05-advanced-docker/day-22-docker-api-controller) — *Manage containers programmatically*\n- [Day 23: Container Resource Governance](./phase-2-containerization/week-05-advanced-docker/day-23-container-resource-governance) — *Enforce CPU/memory limits and monitor them*\n- [Day 24: Dockerized CI Runner](./phase-2-containerization/week-05-advanced-docker/day-24-dockerized-ci-runner) — *Self-hosted GitLab runner in Docker*\n\n### [Orchestration](./phase-3-orchestration)\n\n**Week 6**\n- [Day 25: K8s Fundamentals on k3s](./phase-3-orchestration/week-06-k8s-fundamentals/day-25-k8s-fundamentals-on-k3s) — *Pods, Deployments, Services — the basics*\n- [Day 26: ConfigMaps & Secrets](./phase-3-orchestration/week-06-k8s-fundamentals/day-26-configmaps-secrets) — *Separate config from code*\n\n**Week 7**\n- [Day 27: HPA — Horizontal Pod Autoscaler](./phase-3-orchestration/week-07-k8s-intermediate/day-27-hpa-horizontal-pod-autoscaler) — *Auto-scale under load like production*\n- [Day 28: Persistent Storage with PVCs](./phase-3-orchestration/week-07-k8s-intermediate/day-28-persistent-storage-with-pvcs) — *Stateful apps need durable storage*\n- [Day 29: RBAC — Role-Based Access Control](./phase-3-orchestration/week-07-k8s-intermediate/day-29-rbac-role-based-access-control) — *Least-privilege access in Kubernetes*\n\n**Week 8**\n- [Day 30: Helm Chart — Package Your App](./phase-3-orchestration/week-08-k8s-advanced/day-30-helm-chart-package-your-app) — *Templatize and version your deployments*\n- [Day 31: KEDA — Event-Driven Autoscaling](./phase-3-orchestration/week-08-k8s-advanced/day-31-keda-event-driven-autoscaling) — *Scale on queues, cron, and custom metrics*\n- [Day 32: ArgoCD GitOps Deployment](./phase-3-orchestration/week-08-k8s-advanced/day-32-argocd-gitops-deployment) — *Let Git be your single source of truth*\n\n### [Infrastructure as Code](./phase-4-infrastructure-as-code)\n\n**Week 9**\n- [Day 33: Provision a VM on Azure](./phase-4-infrastructure-as-code/week-09-terraform-basics/day-33-provision-a-vm-on-azure) — *Infrastructure as Code from scratch*\n- [Day 34: Remote State & Locking](./phase-4-infrastructure-as-code/week-09-terraform-basics/day-34-remote-state-locking) — *Collaborate safely on Terraform state*\n- [Day 35: Cloud Services Overview Lab](./phase-4-infrastructure-as-code/week-09-terraform-basics/day-35-cloud-services-overview-lab) — *Azure + AWS side by side*\n\n**Week 10**\n- [Day 36: Terraform Modules — Reusable Infra](./phase-4-infrastructure-as-code/week-10-terraform-intermediate/day-36-terraform-modules-reusable-infra) — *DRY infrastructure with modules*\n- [Day 37: Provision AKS / GKE Cluster](./phase-4-infrastructure-as-code/week-10-terraform-intermediate/day-37-provision-aks-gke-cluster) — *Managed Kubernetes via Terraform*\n- [Day 38: Terraform Workspaces — Multi-Env](./phase-4-infrastructure-as-code/week-10-terraform-intermediate/day-38-terraform-workspaces-multi-env) — *Dev/staging/prod from one codebase*\n\n**Week 11**\n- [Day 39: Server Provisioning Playbook](./phase-4-infrastructure-as-code/week-11-ansible/day-39-server-provisioning-playbook) — *Automate new server setup end-to-end*\n- [Day 40: Ansible Roles — Nginx + TLS](./phase-4-infrastructure-as-code/week-11-ansible/day-40-ansible-roles-nginx-tls) — *Production web server with Let's Encrypt*\n- [Day 41: Ansible + Terraform Integration](./phase-4-infrastructure-as-code/week-11-ansible/day-41-ansible-terraform-integration) — *Provision infra then configure it*\n- [Day 42: Ansible for K8s Node Setup](./phase-4-infrastructure-as-code/week-11-ansible/day-42-ansible-for-k8s-node-setup) — *Automate k8s node joining*\n\n### [CI/CD & GitOps](./phase-5-cicd-gitops)\n\n**Week 12**\n- [Day 43: GitLab CI — Lint, Test, Build](./phase-5-cicd-gitops/week-12-cicd-basics/day-43-gitlab-ci-lint-test-build) — *Your first complete CI pipeline*\n- [Day 44: CI/CD — Push to Registry & Deploy](./phase-5-cicd-gitops/week-12-cicd-basics/day-44-ci-cd-push-to-registry-deploy) — *Full pipeline: code to running container*\n- [Day 45: Pipeline for Kubernetes Deploy](./phase-5-cicd-gitops/week-12-cicd-basics/day-45-pipeline-for-kubernetes-deploy) — *CI/CD that deploys to k3s*\n\n**Week 13**\n- [Day 46: Semantic Versioning & Release Automation](./phase-5-cicd-gitops/week-13-cicd-advanced/day-46-semantic-versioning-release-automation) — *Automate your release process*\n- [Day 47: Pipeline Security: SAST & Image Scan](./phase-5-cicd-gitops/week-13-cicd-advanced/day-47-pipeline-security-sast-image-scan) — *Shift security left into CI*\n- [Day 48: Matrix Build & Self-Healing Pipelines](./phase-5-cicd-gitops/week-13-cicd-advanced/day-48-matrix-build-self-healing-pipelines) — *Multi-version testing + resilient CI*\n\n**Week 14**\n- [Day 49: Terraform + GitLab CI Pipeline](./phase-5-cicd-gitops/week-14-iac-pipelines/day-49-terraform-gitlab-ci-pipeline) — *Automate infra changes through CI*\n- [Day 50: Terratest — Test Your Infrastructure](./phase-5-cicd-gitops/week-14-iac-pipelines/day-50-terratest-test-your-infrastructure) — *Automated testing for Terraform modules*\n\n### [Observability & Reliability](./phase-6-observability-reliability)\n\n**Week 15**\n- [Day 51: Prometheus + Grafana Stack](./phase-6-observability-reliability/week-15-observability/day-51-prometheus-grafana-stack) — *Full observability from scratch*\n- [Day 52: ELK Stack — Centralized Logging](./phase-6-observability-reliability/week-15-observability/day-52-elk-stack-centralized-logging) — *Aggregate and search all your logs*\n\n**Week 16**\n- [Day 53: Alertmanager & Incident Routing](./phase-6-observability-reliability/week-16-reliability/day-53-alertmanager-incident-routing) — *Production-grade alert routing and silencing*\n- [Day 54: Incident Response Bot](./phase-6-observability-reliability/week-16-reliability/day-54-incident-response-bot) — *Auto-remediate common production incidents*\n\n### [Security & Governance](./phase-7-security-governance)\n\n**Week 17**\n- [Day 55: Secrets Management with Vault](./phase-7-security-governance/week-17-security/day-55-secrets-management-with-vault) — *Never hardcode a secret again*\n- [Day 56: Network Policy — Zero Trust K8s](./phase-7-security-governance/week-17-security/day-56-network-policy-zero-trust-k8s) — *Micro-segmentation inside your cluster*\n\n**Week 18**\n- [Day 57: OPA Gatekeeper — Policy as Code](./phase-7-security-governance/week-18-governance/day-57-opa-gatekeeper-policy-as-code) — *Enforce governance across your cluster*\n\n### [Capstone & Interview Prep](./phase-8-capstone)\n\n**Week 19**\n- [Day 58: Full GitOps Platform](./phase-8-capstone/week-19-capstone/day-58-full-gitops-platform) — *Tie everything together: the capstone*\n- [Day 59: Multi-Cloud Networking Lab](./phase-8-capstone/week-19-capstone/day-59-multi-cloud-networking-lab) — *Connect Azure and GCP with VPN tunnel*\n\n**Week 20**\n- [Day 60: Interview-Ready Portfolio & Prep](./phase-8-capstone/week-20-portfolio/day-60-interview-ready-portfolio-prep) — *Package everything for your job switch*\n\n## 🛠 Tech Stack
+- **OS:** Linux (Ubuntu/CentOS)
+- **Scripting:** Bash, Python
+- **Cloud:** AWS/GCP/Azure
+- **IaC:** Terraform, Ansible
+- **CI/CD:** GitLab CI, GitHub Actions
+- **Containers:** Docker, Kubernetes
+- **Monitoring:** Prometheus, Grafana
 
-## Repository Structure
-
-```
-devops-lab/
-│
-├── phase-1-foundations/
-│   ├── week-01-linux/
-│   │   ├── day-01-system-recon/
-│   │   │   ├── README.md
-│   │   │   ├── sysrecon.sh
-│   │   │   └── screenshots/
-│   │   ├── day-02-user-auditor/
-│   │   ├── day-03-process-service-mgr/
-│   │   ├── day-04-filesystem-storage/
-│   │   └── day-05-hardening-checklist/
-│   ├── week-02-networking/
-│   │   ├── day-06-network-fundamentals/
-│   │   ├── day-07-network-discovery/
-│   │   ├── day-08-firewall-iptables/
-│   │   ├── day-09-reverse-proxy-lb/
-│   │   └── day-10-ssh-tunnels-vpn/
-│   └── week-03-bash-git-python/
-│       ├── day-11-log-parser/
-│       ├── day-12-backup-system/
-│       ├── day-13-git-workflow/
-│       ├── day-14-gitlab-admin/
-│       ├── day-15-python-toolkit/
-│       └── day-16-infra-api-client/
-│
-├── phase-2-containerization/
-│   ├── week-04-docker-core/
-│   │   ├── day-17-docker-fundamentals/
-│   │   ├── day-18-multistage-build/
-│   │   ├── day-19-compose-fullstack/
-│   │   ├── day-20-private-registry/
-│   │   └── day-21-docker-networking/
-│   └── week-05-docker-advanced/
-│       ├── day-22-docker-api-controller/
-│       ├── day-23-resource-governance/
-│       └── day-24-ci-runner/
-│
-├── phase-3-orchestration/
-│   ├── week-06-k8s-basics/
-│   │   ├── day-25-k8s-fundamentals/
-│   │   └── day-26-configmaps-secrets/
-│   ├── week-07-k8s-intermediate/
-│   │   ├── day-27-hpa-autoscaling/
-│   │   ├── day-28-pvc-storage/
-│   │   └── day-29-rbac/
-│   └── week-08-k8s-advanced/
-│       ├── day-30-helm-charts/
-│       ├── day-31-keda/
-│       └── day-32-argocd-gitops/
-│
-├── phase-4-iac/
-│   ├── week-09-terraform-basics/
-│   │   ├── day-33-provision-vm/
-│   │   ├── day-34-remote-state/
-│   │   └── day-35-cloud-overview/
-│   ├── week-10-terraform-advanced/
-│   │   ├── day-36-terraform-modules/
-│   │   ├── day-37-provision-aks/
-│   │   └── day-38-terraform-workspaces/
-│   └── week-11-ansible/
-│       ├── day-39-server-provisioning/
-│       ├── day-40-nginx-tls-role/
-│       ├── day-41-terraform-ansible/
-│       └── day-42-ansible-k8s-setup/
-│
-├── phase-5-cicd/
-│   ├── week-12-pipelines/
-│   │   ├── day-43-gitlab-ci-basics/
-│   │   ├── day-44-registry-deploy/
-│   │   └── day-45-k8s-deploy-pipeline/
-│   ├── week-13-advanced-ci/
-│   │   ├── day-46-semantic-versioning/
-│   │   ├── day-47-pipeline-security/
-│   │   └── day-48-matrix-builds/
-│   └── week-14-iac-pipelines/
-│       ├── day-49-terraform-ci/
-│       └── day-50-terratest/
-│
-├── phase-6-observability/
-│   ├── week-15-metrics-logging/
-│   │   ├── day-51-prometheus-grafana/
-│   │   └── day-52-elk-stack/
-│   └── week-16-alerting/
-│       ├── day-53-alertmanager/
-│       └── day-54-incident-bot/
-│
-├── phase-7-security/
-│   ├── week-17-secrets/
-│   │   ├── day-55-vault/
-│   │   └── day-56-network-policy/
-│   └── week-18-governance/
-│       └── day-57-opa-gatekeeper/
-│
-├── phase-8-capstone/
-│   ├── week-19-capstone/
-│   │   ├── day-58-gitops-platform/
-│   │   └── day-59-multicloud-vpn/
-│   └── week-20-interview-prep/
-│       └── day-60-portfolio/
-│
-├── .gitignore
-└── README.md ← you are here
-```
-
-## Tech Stack
-
-**Core**: Linux, Bash, Python, Git
-
-**Containers & Orchestration**: Docker, Kubernetes (k3s), Helm, KEDA, ArgoCD
-
-**Infrastructure as Code**: Terraform, Ansible
-
-**Cloud**: Azure (primary), AWS (secondary)
-
-**CI/CD**: GitLab CI, semantic-release, Trivy, Bandit
-
-**Observability**: Prometheus, Grafana, ELK (Elasticsearch + Logstash + Kibana), Alertmanager
-
-**Security**: HashiCorp Vault, OPA Gatekeeper, NetworkPolicy
-
-## How I Work on This
-
-- One feature branch per project (`day-01-system-recon`, `day-02-user-auditor`, etc.)
-- Conventional commits: `feat:`, `fix:`, `docs:`, `chore:`
-- Merge to `main` via MR — even solo, the habit matters
-- Every project folder has its own README with what I built, how to run it, and what I learned
-- Push daily — consistency over perfection
-
-## About Me
-
-DevOps Engineer with 1 year of production experience. Stack includes Azure, GCP, GitLab CI/CD, Docker, Kubernetes, Terraform, and Python.
-
-Currently building this portfolio to deepen my skills and prepare for my next role at a product company or funded startup.
-
-- [LinkedIn](https://linkedin.com/in/mukeshsundarp)
-- [Email](mukeshsundar2362004@gmail.com)
+---
+*Built incrementally over 60 days.*
