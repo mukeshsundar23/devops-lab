@@ -1,0 +1,64 @@
+# ── Secrets & Credentials ────────────────────
+.env
+.env.*
+*.tfvars
+*.tfvars.json
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+id_rsa*
+*.p12
+
+# ── Terraform ────────────────────────────────
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ── Ansible ──────────────────────────────────
+*.retry
+
+# ── Docker ───────────────────────────────────
+docker-compose.override.yml
+
+# ── Kubernetes ───────────────────────────────
+kubeconfig
+*.kubeconfig
+.kube/
+
+# ── Python ───────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ── Node ─────────────────────────────────────
+node_modules/
+package-lock.json
+yarn.lock
+
+# ── OS & Editor ──────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ── Logs & Dumps ─────────────────────────────
+*.log
+*.dump
+*.bak
+*.tmp
