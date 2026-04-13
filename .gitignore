@@ -62,3 +62,6 @@ Thumbs.db
 *.dump
 *.bak
 *.tmp
+
+# ── Project Specific ─────────────────────────
+workflow-notes.md
